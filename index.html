@@ -20,9 +20,11 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact" class="nav__cta">Book Now</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="mailto:russellp0105@gmail.com" class="nav__cta">Book Now</a></li>
       </ul>
     </div>
   </nav>
@@ -70,69 +72,40 @@
   </section>
 
   <!-- ── Services Teaser ───────────────────────── -->
-  <section class="services" id="services">
+  <section class="services-teaser">
     <div class="container">
       <div class="section-header fade-in">
         <p class="section-eyebrow">What We Do</p>
         <h2>Every milestone deserves to be captured.</h2>
       </div>
 
-      <div class="services__grid">
+      <div class="services-teaser__grid">
 
         <div class="service-card fade-in">
           <div class="service-card__image">
             <img src="Photos/IMG_0620.jpg" alt="Portrait at the Oceanside coast">
           </div>
-          <div class="service-card__label">Portraits</div>
-        </div>
-
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Couples</div>
-        </div>
-
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Families</div>
+          <p class="service-card__label">Portraits</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-card__image">
             <img src="Photos/IMG_0163.JPG" alt="Golden retriever in golden hour light">
           </div>
-          <div class="service-card__label">Pets</div>
+          <p class="service-card__label">Pets</p>
         </div>
 
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Proposals</div>
-        </div>
-
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Graduations</div>
-        </div>
-
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Military Homecomings</div>
-        </div>
-
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Promotions</div>
-        </div>
-
-        <div class="service-card fade-in">
-          <div class="service-card__image service-card__image--placeholder"></div>
-          <div class="service-card__label">Retirements</div>
-        </div>
+        <a href="services.html" class="service-card service-card--cta fade-in">
+          <div class="service-card__image">
+            <p>9<br>Services</p>
+          </div>
+          <p class="service-card__label">See All</p>
+        </a>
 
       </div>
 
-      <div class="services__cta fade-in">
-        <p>Ready to book your session?</p>
-        <a href="mailto:russellp0105@gmail.com" class="btn btn--primary">Get in Touch</a>
+      <div class="services-teaser__cta fade-in">
+        <a href="services.html" class="btn btn--outline">View All Services</a>
       </div>
     </div>
   </section>
@@ -150,6 +123,13 @@
       <p class="footer__copy">&copy; 2026 AP Visuals. All rights reserved.</p>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+    Back to top
+  </button>
 
   <script src="js/main.js"></script>
 </body>
