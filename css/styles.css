@@ -668,7 +668,13 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
   text-transform: uppercase;
 }
 
-.footer__contact { text-align: right; }
+.footer__contact {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-end;
+}
 .footer__contact a {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.65);
