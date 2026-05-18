@@ -804,6 +804,25 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
   .form-row { grid-template-columns: 1fr; }
 }
 
+/* ─── Promo banner ───────────────────────────────── */
+.promo-banner {
+  background: var(--accent);
+  color: var(--white);
+  text-align: center;
+  padding: 0.75rem var(--space-md);
+  font-size: 0.825rem;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+.promo-banner a {
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 0.35rem;
+}
+.promo-banner a:hover { opacity: 0.82; }
+
 /* ─── Back to top ────────────────────────────────── */
 .back-to-top {
   position: fixed;
