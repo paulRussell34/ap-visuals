@@ -1,6 +1,6 @@
 // ── Always start at top on load ──────────────────
 history.scrollRestoration = 'manual';
-window.scrollTo(0, 0);
+window.addEventListener('load', () => window.scrollTo(0, 0));
 
 // ── Nav: transparent → solid on scroll ──────────
 const nav = document.getElementById('nav');
