@@ -352,6 +352,10 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
 }
 .service-card:hover .service-card__image { transform: scale(1.07); }
 
+.service-card__image--placeholder {
+  background: linear-gradient(145deg, #4a453e 0%, #2e2d2a 100%);
+}
+
 .service-card::after {
   content: '';
   position: absolute;
