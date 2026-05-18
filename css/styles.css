@@ -799,6 +799,21 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
   color: var(--accent-dark);
 }
 
+.form-error {
+  display: none;
+  background: #fdf0f0;
+  border: 1px solid #d9756a;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: #8b3a33;
+}
+.form-error a {
+  color: #8b3a33;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (max-width: 900px) {
   .contact-section__inner { grid-template-columns: 1fr; gap: var(--space-lg); }
   .form-row { grid-template-columns: 1fr; }

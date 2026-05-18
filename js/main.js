@@ -45,6 +45,42 @@ if (backToTop) {
   });
 }
 
+// ── Contact form (AJAX submit) ────────────────────
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  if (window.location.search.includes('submitted=true')) {
+    contactForm.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    history.replaceState(null, '', 'contact.html');
+  }
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('[type="submit"]');
+    const errorEl = document.getElementById('formError');
+    errorEl.style.display = 'none';
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        window.location.href = 'contact.html?submitted=true';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Send Inquiry';
+      errorEl.style.display = 'block';
+    }
+  });
+}
+
 // ── Scroll-in animations (IntersectionObserver) ──
 const observer = new IntersectionObserver(
   entries => entries.forEach(entry => {
