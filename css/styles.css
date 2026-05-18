@@ -682,6 +682,12 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
 }
 .footer__contact a:hover { color: var(--white); }
 
+.footer__ig {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .footer__copy {
   grid-column: 1 / -1;
   font-size: 0.72rem;
