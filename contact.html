@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a session with AP Visuals - photography in Oceanside, CA. Reach out for portraits, couples, families, pets, and more.">
+  <title>Contact | AP Visuals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ────────────────────────────── -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">AP Visuals</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="nav__cta nav__active-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Header ────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__image">
+      <img src="Photos/IMG_0569.jpg" alt="Peaceful evening at the Oceanside coast">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="hero__eyebrow">Let's work together</p>
+      <h1 class="page-hero__title">Book a session.</h1>
+    </div>
+  </section>
+
+  <!-- ── Contact Form ───────────────────────────── -->
+  <section class="contact-section">
+    <div class="container contact-section__inner">
+
+      <div class="contact-intro fade-in">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2>Tell us about your session.</h2>
+        <p>Fill out the form and we'll get back to you within 24 hours. Not sure what you need? Just say hello and we'll figure it out together.</p>
+      </div>
+
+      <form
+        class="contact-form fade-in"
+        action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
+        method="POST"
+        id="contactForm"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name <span class="form-required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="form-required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="session">Type of Session <span class="form-required">*</span></label>
+            <select id="session" name="session" required>
+              <option value="" disabled selected>Select a session type</option>
+              <option value="Portraits">Portraits</option>
+              <option value="Couples">Couples</option>
+              <option value="Families">Families</option>
+              <option value="Pets">Pets</option>
+              <option value="Proposals">Proposals</option>
+              <option value="Graduations">Graduations</option>
+              <option value="Military Homecomings">Military Homecomings</option>
+              <option value="Promotions">Promotions</option>
+              <option value="Retirements">Retirements</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date <span class="form-optional">(optional)</span></label>
+            <input type="date" id="date" name="preferred_date">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your session <span class="form-required">*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Share any details — who's involved, location ideas, what you're envisioning, etc." required></textarea>
+        </div>
+
+        <div class="form-group form-submit">
+          <button type="submit" class="btn btn--primary">Send Inquiry</button>
+          <p class="form-note">We'll reply within 24 hours.</p>
+        </div>
+
+        <div class="form-success" id="formSuccess">
+          <p>Thanks for reaching out! We'll be in touch within 24 hours.</p>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">AP Visuals</p>
+        <p class="footer__tagline">Oceanside, California</p>
+      </div>
+      <div class="footer__contact">
+        <a href="mailto:russellp0105@gmail.com">russellp0105@gmail.com</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 AP Visuals. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+    Back to top
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
