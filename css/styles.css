@@ -359,6 +359,14 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
   letter-spacing: 0.01em;
 }
 
+.service-card__desc {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-align: center;
+  padding: 0.3rem 0.25rem 0;
+  line-height: 1.6;
+}
+
 /* CTA card */
 .service-card--cta .service-card__image {
   background: var(--bg-alt);
@@ -718,6 +726,35 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
   color: var(--text-light);
   line-height: 1.8;
   margin-top: var(--space-sm);
+}
+
+.contact-steps {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  counter-reset: steps;
+}
+
+.contact-steps li {
+  counter-increment: steps;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.contact-steps li::before {
+  content: counter(steps);
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  color: var(--accent);
+  min-width: 1rem;
+  flex-shrink: 0;
 }
 
 .contact-form {
