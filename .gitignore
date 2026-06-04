@@ -1,3 +1,5 @@
 .DS_Store
-Photos/*.CR3
-Photos/*.cr3
+**/*.CR3
+**/*.cr3
+**/*.tif
+**/*.TIF

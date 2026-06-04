@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=5">
-  <script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual';</script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 <body>
 
@@ -116,7 +117,7 @@
 
       </div>
 
-      <div class="services-teaser__cta fade-in" style="margin-top: var(--space-lg);">
+      <div class="services-teaser__cta services-teaser__cta--spaced fade-in">
         <p style="font-size:1rem; color:var(--text-light); margin-bottom:var(--space-sm);">Not sure what you need? Just reach out.</p>
         <a href="contact.html" class="btn btn--primary">Get in Touch</a>
       </div>

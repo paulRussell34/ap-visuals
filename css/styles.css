@@ -1019,6 +1019,8 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
   }
 }
 
+.services-teaser__cta--spaced { margin-top: var(--space-lg); }
+
 /* ─── Portfolio ───────────────────────────────────── */
 .portfolio-section {
   padding: var(--space-2xl) 0;

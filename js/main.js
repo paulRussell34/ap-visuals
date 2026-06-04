@@ -1,3 +1,4 @@
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
 // ── Nav: transparent → solid on scroll ──────────
 const nav = document.getElementById('nav');
