@@ -1023,7 +1023,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
 
 /* ─── Portfolio ───────────────────────────────────── */
 .portfolio-section {
-  padding: var(--space-2xl) 0;
+  padding: var(--space-2xl) 0 var(--space-lg);
 }
 
 .portfolio-session {
